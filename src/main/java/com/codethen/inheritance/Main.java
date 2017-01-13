@@ -37,6 +37,7 @@ public class Main {
         list.add(fridge);
         list.add(fridge2);
         list.add(freezer);
+        list.add(new TV());
 
 
         turnMachinesOn(list);
