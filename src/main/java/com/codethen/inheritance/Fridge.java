@@ -9,4 +9,8 @@ public class Fridge implements Machine {  // que hereda de clase Machine, se pon
         System.out.println("Fridge is on");
 
     }
+
+    void turnLightOn(){
+        System.out.println("Light turned on");
+    }
 }

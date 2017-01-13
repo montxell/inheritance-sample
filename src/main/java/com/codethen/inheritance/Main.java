@@ -1,5 +1,6 @@
 package com.codethen.inheritance;
 
+import javax.crypto.Mac;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +8,15 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Machine freezer;
+        freezer = new FrezzerFridge();
+
+        //FrezzerFridge freezer = new FrezzerFridge();
+        freezer.turnOn();
+        freezer.turnLightOn();
+        freezer.unfreeze();
+
+        System.out.println("----");
 
         Machine fridge = new Fridge();
         Machine fridge2 = new Fridge();
@@ -26,6 +36,10 @@ public class Main {
         list.add(oven2);
         list.add(fridge);
         list.add(fridge2);
+        list.add(freezer);
+
+
+        turnMachinesOn(list);
 
 
 /*
@@ -36,11 +50,20 @@ public class Main {
         }
 */
 
-
+/*
         for (Machine machine : list) {
             machine.turnOn();
         }
+*/
 
+
+    /** turns on all the given machines */
+    private static void turnMachinesOn(List< Machine> machines) {
+
+            for (Machine machine : machines) {
+                machine.turnOn();
+            }
 
     }
+
 }
