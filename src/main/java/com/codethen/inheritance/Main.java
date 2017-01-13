@@ -8,10 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Machine freezer;
-        freezer = new FrezzerFridge();
+        //Machine freezer;
+        //freezer = new FrezzerFridge();
 
-        //FrezzerFridge freezer = new FrezzerFridge();
+        FrezzerFridge freezer = new FrezzerFridge();
         freezer.turnOn();
         freezer.turnLightOn();
         freezer.unfreeze();
@@ -41,6 +41,7 @@ public class Main {
 
         turnMachinesOn(list);
 
+    }
 
 /*
         for (int i=0; i<list.size(); i++) {
@@ -58,12 +59,14 @@ public class Main {
 
 
     /** turns on all the given machines */
-    private static void turnMachinesOn(List< Machine> machines) {
+    private static void turnMachinesOn(List<Machine> machines){
 
-            for (Machine machine : machines) {
-                machine.turnOn();
-            }
+        for (Machine machine : machines) {
+            machine.turnOn();
+        }
 
     }
 
 }
+
+

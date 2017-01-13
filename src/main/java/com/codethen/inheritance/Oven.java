@@ -9,6 +9,7 @@ public class Oven implements Machine {   // que hereda de clase Machine, se pone
         this.temperature = 0;
     }
 
+    @Override //Sobreescribir porque viene de una clase superior
     public void turnOn() {
 
         System.out.println("Oven is on");
